@@ -9,47 +9,69 @@
 # =============================================================================
 
 team:
-  name: ""                             # REQUIRED — e.g., "Orion Squad"
-  track: ""                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
+  name: MindMesh AI                            # REQUIRED — e.g., "Orion Squad"
+  track: Logistics & Ports                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
   lead:
-    name: ""                           # REQUIRED — e.g., "Alice Chen"
-    email: ""                          # REQUIRED — e.g., "alice.chen@ibm.com"
+    name: Rashi FOfaria                          # REQUIRED — e.g., "Alice Chen"
+    email: d25dce154@charusat.edu.in                          # REQUIRED — e.g., "alice.chen@ibm.com"
   members:
-    - name: ""                         # REQUIRED — Team member 1
-      email: ""
-    - name: ""                         # Add more members by copying the two lines above
-      email: ""
-    - name: ""
-      email: ""
+    - name: yesha chauhan                         # REQUIRED — Team member 1
+      email: d25dce155Acharusat.edu.in
+    - name: fagun mataria                       # Add more members by copying the two lines above
+      email: 24dce071@charusat.edu.in
+    - name: Priya Pathak
+      email: d25it119@charusat.edu.in
 
 submission:
-  title: ""                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
+  title: ChainGuard AI                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
 
   problem_statement: >                 # REQUIRED — 1-3 sentences. What problem? Who has it?
-    Replace this text with a concise description of the real-world problem
-    your project addresses and who experiences it.
+  Supply chain disruptions — weather events, port strikes, geopolitical crises — cascade
+across hundreds of active shipments in ways that are impossible to track manually. Fleet
+assets (trucks, containers, vessels) sit idle while other routes are overloaded. Cold chain
+shipments (vaccines, perishables) are especially vulnerable — a single temperature
+excursion across any leg can spoil a $500K+ cargo, but breaches are only discovered at
+delivery when it is too late.
 
   solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
+  ChainGuard AI is an AI-powered supply-chain control tower that identifies disruption-affected shipments, evaluates shipment risk and recommends alternative routes and carriers. It also matches idle fleet vehicles to urgent shipments and monitors cold-chain temperature data to detect excursions and classify their severity, with IBM Bob providing a conversational AI interface for supply-chain decision support.
 
   key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
+  Disruption Impact Analysis: Identifies shipments affected by active disruptions and determines their level of risk.
+AI Shipment Risk Assessment: Calculates shipment risk using factors such as disruption severity, route exposure, delay, cargo sensitivity and delivery urgency.
+Route & Carrier Recommendations: Recommends safer alternative routes and suitable carriers by comparing risk, cost and estimated travel time.
+Idle Fleet Redeployment: Identifies available idle vehicles and matches them with affected shipments based on location, capacity, vehicle type and cargo requirements.
+Cold-Chain Monitoring: Analyzes temperature logs for temperature-sensitive shipments and detects abnormal temperature excursions.
+Severity Classification: Classifies detected cold-chain excursions according to the severity rules implemented in the system.
+AI Recommendations: Converts detected risks and available resources into actionable operational recommendations.
+IBM Bob Assistant: Allows users to ask natural-language questions about disruptions, shipment risks, fleet availability, recommendations and cold-chain alerts.                        # optional 5th
 
-  tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+## 🛠️ Tech Stack
+
+| Category               | Technologies                                                            |
+| ---------------------- | ----------------------------------------------------------------------- |
+| **Languages**          | TypeScript, JavaScript                                                  |
+| **Frontend Framework** | Next.js, React                                                          |
+| **Frontend Styling**   | Tailwind CSS, PostCSS                                                   |
+| **UI Components**      | shadcn/ui, Base UI React                                                |
+| **Visualization**      | Recharts                                                                |
+| **Icons**              | Lucide React                                                            |
+| **Package Manager**    | pnpm                                                                    |
+| **Analytics**          | Vercel Analytics                                                        |
+| **Backend**            | Node.js, Express.js                                                     |
+| **AI / ML**            | Machine Learning, Risk Scoring, Anomaly Detection, Recommendation Logic |
+| **IBM Technologies**   | IBM Bob                                                                 |
+| **Database**           | MongoDB                                                                 |
+| **Database ODM**       | Mongoose                                                                |
+| **API Communication**  | REST APIs                                                               |
+| **Version Control**    | Git, GitHub                                                             |
+| **Other**              | Environment Variables                                                   |
+
+---
+             # e.g., ["Docker", "GitHub Actions", "Slack API"]
 
   what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+  We are most proud of bringing multiple supply-chain intelligence capabilities into one integrated decision-support platform. ChainGuard AI connects disruption impact analysis, shipment risk assessment, route and carrier recommendations, idle fleet redeployment and cold-chain monitoring into a single workflow, while IBM Bob provides a natural-language interface through which users can understand risks and obtain actionable recommendations.
 
   known_limitations: >                 # Optional but recommended — be honest about gaps
     Replace with any known limitations, incomplete features,
