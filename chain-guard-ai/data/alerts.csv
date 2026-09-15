@@ -1,9 +1,0 @@
-alert_id,source,timestamp,src_ip,dst_ip,user,host,event_type,description,severity,confidence,asset_id
-A001,SIEM,2026-09-14 10:01:00,185.10.20.30,10.0.0.15,admin,SERVER-01,failed_login,Multiple failed login attempts,7,0.91,ASSET-01
-A002,Endpoint,2026-09-14 10:03:00,185.10.20.30,10.0.0.15,admin,SERVER-01,powershell,PowerShell executed encoded command,9,0.94,ASSET-01
-A003,Network,2026-09-14 10:04:00,185.10.20.30,10.0.0.15,admin,SERVER-01,outbound_connection,Suspicious outbound connection to external IP,8,0.89,ASSET-01
-A004,ThreatIntel,2026-09-14 10:05:00,185.10.20.30,10.0.0.15,admin,SERVER-01,malicious_ip,Source IP associated with malicious activity,9,0.96,ASSET-01
-A005,SIEM,2026-09-14 11:20:00,45.50.60.70,10.0.0.25,user1,PC-22,failed_login,Single failed login attempt,3,0.70,ASSET-02
-A006,Endpoint,2026-09-14 11:22:00,45.50.60.70,10.0.0.25,user1,PC-22,file_access,Normal document access,2,0.80,ASSET-02
-A007,Network,2026-09-14 12:10:00,100.20.30.40,10.0.0.30,user2,PC-31,dns_request,Unusual DNS request,5,0.75,ASSET-03
-A008,SIEM,2026-09-14 12:12:00,100.20.30.40,10.0.0.30,user2,PC-31,login,Successful login,4,0.82,ASSET-03
