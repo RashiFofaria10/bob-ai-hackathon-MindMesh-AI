@@ -6,15 +6,15 @@ ChainGuard AI is an AI-powered supply-chain control tower that connects the fron
 
 ```mermaid
 graph TD
-    A[User / Browser] -->|HTTP / HTTPS| B[Frontend - React]
-    B -->|REST API| C[Backend - Node.js / Express]
-    C -->|Query / Update| D[MongoDB]
-    C -->|Analyze Supply Chain Data| E[AI / ML]
-    E -->|Risk Scores / Recommendations| C
-    C -->|AI Request| F[IBM Bob]
-    F -->|AI Response| C
-    C -->|JSON Response| B
-    B -->|Dashboard / Alerts / Analytics| A
+    A[User Browser] --> B[React Frontend]
+    B --> C[Node Express Backend]
+    C --> D[MongoDB]
+    C --> E[AI ML Engine]
+    E --> C
+    C --> F[IBM Bob]
+    F --> C
+    C --> B
+    B --> A
 
 ## Components
 
