@@ -15,10 +15,9 @@ graph TD
     F --> C
     C --> B
     B --> A
-
-## Components
-
-| Component    | Technology                                        | Responsibility                                                                                                     |
+```
+## Components 
+ | Component    | Technology                                        | Responsibility                                                                                                     |
 | ------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Frontend     | React, TypeScript, Tailwind CSS, shadcn/ui        | Dashboard UI, user interaction, supply-chain monitoring, analytics, and visualization                              |
 | Backend API  | Node.js, Express.js                               | Business logic, REST APIs, data processing, and orchestration                                                      |
